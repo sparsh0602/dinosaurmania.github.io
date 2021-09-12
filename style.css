@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-image: url("background.jpeg");
+    background-repeat: repeat;
+    overflow: hidden;
+}
+
+.dino{
+    position: absolute;
+    background-image: url("dinosaur.png");
+    width: 10vw;
+    height: 13.125vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    bottom: 0;
+    left: 4vw;
+}
+
+.obstacle{
+
+    position: absolute;
+    background-image: url("monster.png");
+    width: 6vw;
+    height: 7.875vw;
+    background-size: cover;
+    right: 4vw;
+    bottom: 0;
+    
+}
+.obstacleAni{
+    animation: obstacleAni 3s linear infinite;
+}
+
+#scorecon{
+    position: absolute;
+    color: greenyellow;
+    font-size: 2vw;
+    text-decoration: underline;
+    padding: 1vw;
+}
+
+.gameover{
+    position: absolute;
+    visibility: hidden;
+    font-size: 10vw;
+    color: red;
+    left: 15vw;
+    top: 20vw;
+    background: linear-gradient(rgb(22, 197, 22),green);
+    border: 3px solid black;
+    text-shadow: 3px 3px white;
+}
+
+button{
+    position: absolute;
+    right: 5vw;
+    top: 2vw;
+    color: yellow;
+    border: 2px solid black;
+    background: linear-gradient(rgb(13, 240, 13),green);
+    padding: 2vw;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-shadow: 1px  whitesmoke;
+    cursor: pointer;
+}
+
+a{
+    background: linear-gradient(rgb(13, 240, 13),green);
+    color: yellow;
+
+}
+
+.instructions{
+    position: absolute;
+    padding: 1 vw;
+    border: 2px solid black;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    left: 50vw;
+    color: white;
+}
+.animateDino{
+    animation:  dino 0.6s linear;
+}
+
+/* ANIMATION : at 0%, 50%, 100% */
+@keyframes dino{ 
+
+    0%{
+        bottom: 0;
+    }
+
+    50%
+    {
+        bottom: 20vw;
+    }
+
+    100%
+    {
+        bottom: 0;
+    }
+}
+
+
+
+ @keyframes obstacleAni{
+
+    0%{
+        left:100vw;
+    }
+    100%{
+        left: -10vw;
+    }
+
+}
