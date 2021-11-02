@@ -116,3 +116,33 @@ a{
     }
 
 }
+
+@media screen and (max-width: 650px)
+{
+
+    .gameover{
+        position: absolute;
+        visibility: hidden;
+        font-size: 10vw;
+        color: red;
+        left: 15vw;
+        top: 50vw;
+        background: linear-gradient(rgb(22, 197, 22),green);
+        border: 3px solid black;
+        text-shadow: 3px 3px white;
+    }
+
+    button{
+        position: absolute;
+        left: 0vw;
+        top: 5vw;
+        color: yellow;
+        border: 2px solid black;
+        background: linear-gradient(rgb(13, 240, 13),green);
+        padding: 2vw;
+        font-size: x-large;
+        font-weight: bolder;
+        text-shadow: 1px  whitesmoke;
+        cursor: pointer;
+    }
+}
