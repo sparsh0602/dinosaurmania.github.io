@@ -1,4 +1,13 @@
+// DEVICE ALERT
+let size=window.innerWidth;
+if(size<650)
+{
+    alert("THIS GAME CAN ONLY BE PLAYED ON COMPUTER");
+}
 
+
+
+// GAME CODE
 let score=0;
 let cross=true;
 
